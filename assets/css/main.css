@@ -43,7 +43,7 @@ html {
  * Main
  *
  */
- .hero-img {
+.hero-img {
   margin: 0 auto;
 }
 
@@ -95,49 +95,4 @@ footer a {
   text-decoration: none;
   color: #2d3c49;
   padding: 1.5em;
-}
-
-/*
- *
- * Responsive
- *
- */
-@media screen and (min-width: 400px) {
-  footer {
-    width: 100%;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 700px) {
-  .header {
-    margin: 0 auto 35px;
-    justify-content: space-between;
-    text-align: left;
-  }
-
-  .header-subtitle {
-    text-align: right;
-  }
-  
-  .featured-header {
-    text-align: left;
-  }
-
-  .header, .featured-container {
-    display: flex;
-    max-width: 1400px;
-  }
-
-  .featured-container {
-    margin: 0 auto;
-  }
-
-  .featured-item {
-    margin: 5px 15px 15px 0;
-  }
-
-  .featured-item:last-child {
-    margin-right: 0;
-  }
 }

@@ -1,31 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Darren's Awesome Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" media="screen" href="assets/css/main.css" />
+    <link rel="stylesheet" media="screen" href="assets/css/responsive.css" />
   </head>
   <body>
     <header class="header">
       <div class="header-logo">
         <img
           class="header-img responsive-img"
-          src="assets/images/udacity_mark.png"
+          src="assets/img/udacity_mark.png"
           alt="Logo"
         />
       </div>
       <div>
         <h1 class="header-name">Darren Beckwith</h1>
-        <p class="header-subtitle">Manager of Technology</p>
+        <p class="header-subtitle">Front-End Noobie</p>
       </div>
     </header>
     <main class="content">
       <img
         class="hero-img responsive-img"
-        src="http://via.placeholder.com/480x250"
-        alt="Placeholder"
+        srcset="
+          assets/img/birds-small.jpg   480w,
+          assets/img/birds-medium.jpg  960w,
+          assets/img/birds-large.jpg  1920w
+        "
+        sizes="100vw"
+        src="assets/img/birds-small.jpg"
+        alt="Hero "
       />
       <section class="featured">
         <h2 class="featured-header">Featured Work</h2>
@@ -33,34 +40,34 @@
           <div class="featured-item">
             <img
               class="featured-img responsive-img"
-              src="http://via.placeholder.com/480x150"
+              src="assets/img/beach-small.jpg"
               alt="Featured Image One"
             />
             <h3 class="featured-title">Feature 1</h3>
             <p class="featured-subtitle">
-              <a class="featured-link" href="">http://www.carmanah.com</a>
+              <a class="featured-link" href="">https://github.com/foo</a>
             </p>
           </div>
           <div class="featured-item">
             <img
               class="featured-img responsive-img"
-              src="http://via.placeholder.com/480x150"
+              src="assets/img/boat-small.jpg"
               alt="Featured Image Two"
             />
             <h3 class="featured-title">Feature 2</h3>
             <p class="featured-subtitle">
-              <a class="featured-link" href="">http://www.carmanah.com</a>
+              <a class="featured-link" href="">https://github.com/bar</a>
             </p>
           </div>
           <div class="featured-item">
             <img
               class="featured-img responsive-img"
-              src="http://via.placeholder.com/480x150"
+              src="assets/img/coast-small.jpg"
               alt="Featured Image Three"
             />
             <h3 class="featured-title">Feature 3</h3>
             <p class="featured-subtitle">
-              <a class="featured-link" href="">http://www.carmanah.com</a>
+              <a class="featured-link" href="">https://github.com/foobar</a>
             </p>
           </div>
         </div>
@@ -68,9 +75,13 @@
     </main>
     <footer>
       <ul>
-        <li><a href="mailto:darren.beckwith@gmail.com">Connect Via Email</a></li>
-        <li><a href="#">Connect on LinkedIn</a></li>
-        <li><a href="#">Connect on Github</a></li>
+        <li><a href="mailto:darren.beckwith@gmail.com">Connect on Email</a></li>
+        <li>
+          <a href="https://www.linkedin.com/in/darren-beckwith-7062b118/"
+            >Connect on LinkedIn</a
+          >
+        </li>
+        <li><a href="https://github.com/dbeckwith01">Connect on Github</a></li>
       </ul>
     </footer>
   </body>
